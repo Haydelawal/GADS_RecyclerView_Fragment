@@ -33,6 +33,11 @@ class FirstFragment : Fragment() {
             findNavController().navigate(action)
         }
 
+        binding.buttonModal.setOnClickListener {
+            val action = FirstFragmentDirections.actionFirstFragmentToBottomModalSheetFragment()
+            findNavController().navigate(action)
+        }
+
         return binding.root
     }
 

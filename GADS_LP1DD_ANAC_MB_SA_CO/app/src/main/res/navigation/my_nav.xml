@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_firstFragment_to_secondFragment"
             app:destination="@id/secondFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_bottomModalSheetFragment"
+            app:destination="@id/bottomModalSheetFragment" />
     </fragment>
     <fragment
         android:id="@+id/secondFragment"
@@ -26,4 +29,13 @@
             android:name="currentUser"
             app:argType="com.example.gads_lp1dd_anac_mb_sa_co.User" />
     </fragment>
+    <dialog
+        android:id="@+id/bottomModalSheetFragment"
+        android:name="com.example.gads_lp1dd_anac_mb_sa_co.BottomModalSheetFragment"
+        android:label="fragment_bottom_modal_sheet"
+        tools:layout="@layout/fragment_bottom_modal_sheet" >
+        <action
+            android:id="@+id/action_bottomModalSheetFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
+    </dialog>
 </navigation>
