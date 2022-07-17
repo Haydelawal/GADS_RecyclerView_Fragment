@@ -6,11 +6,6 @@ import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkContinuation
 import androidx.work.WorkManager
 import androidx.work.workDataOf
-import com.douglasstarnes.workchains.DatabaseWriteWorker
-import com.douglasstarnes.workchains.NetworkRequestWorker
-import com.douglasstarnes.workchains.ObjectDetectionWorker
-import com.example.gads_path_daawk_module_3_work_manager.R
-import com.example.gads_path_daawk_module_3_work_manager.databinding.ActivitySecondBinding
 import com.example.gads_path_daawk_module_3_work_manager.databinding.ActivityThirdBinding
 
 class ThirdActivity : AppCompatActivity() {
